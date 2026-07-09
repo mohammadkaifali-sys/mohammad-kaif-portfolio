@@ -1,0 +1,11 @@
+{
+  "/api/contact/route": "/api/contact",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/resume/route": "/resume",
+  "/icon/route": "/icon",
+  "/page": "/",
+  "/_not-found/page": "/_not-found",
+  "/projects/[slug]/page": "/projects/[slug]",
+  "/opengraph-image/route": "/opengraph-image"
+}

@@ -1,11 +1,12 @@
 {
-  "/api/contact/route": "/api/contact",
-  "/robots.txt/route": "/robots.txt",
-  "/sitemap.xml/route": "/sitemap.xml",
-  "/resume/route": "/resume",
-  "/icon/route": "/icon",
-  "/page": "/",
+  "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
+  "/api/contact/route": "/api/contact",
+  "/icon/route": "/icon",
+  "/opengraph-image/route": "/opengraph-image",
+  "/page": "/",
   "/projects/[slug]/page": "/projects/[slug]",
-  "/opengraph-image/route": "/opengraph-image"
+  "/resume/route": "/resume",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml"
 }

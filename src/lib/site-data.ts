@@ -69,7 +69,7 @@ export const projects = [
       'Responsive layout optimized for recruiters and stakeholders'
     ],
     stack: ['Python', 'SQL', 'Power BI', 'Data Storytelling'],
-    githubHref: '/projects/ev-smartbuddy#implementation',
+    githubHref:  "https://github.com/mohammadkaifali-sys/EV-BUDDY"
     liveHref: '/projects/ev-smartbuddy',
     accent: 'from-cyan-500/20 via-sky-500/10 to-transparent'
   },

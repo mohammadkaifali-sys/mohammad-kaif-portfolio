@@ -20,7 +20,7 @@ export const siteConfig = {
   email: 'alikaif5605@gmail.com',
   linkedin: 'https://www.linkedin.com/in/mohammad-kaif-ali-387a14321',
   github: 'https://github.com/mohammadkaifali-sys',
-  resumePath: '/resumePath: '/Mohammad_Kaif_Ali_Resume_1.pdf',
+  resumePath:  '/Mohammad_Kaif_Ali_Resume_1.pdf',
   siteUrl: getSiteUrl()
 };
 

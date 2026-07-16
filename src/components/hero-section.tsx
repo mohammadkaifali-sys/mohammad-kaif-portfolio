@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from 'next/link';
 
@@ -27,21 +29,24 @@ export function HeroSection() {
           <p className="mb-3 inline-flex w-fit items-center rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-400">
         👋 Hi, Welcome to my Portfolio
          </p>
-          <h1 className="max-w-4xl font-display text-4xl font-semibold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-            Mohammad Kaif Ali
-          </h1>
-          <div className="mt-5 flex flex-wrap gap-3">
-     <span className="rounded-full bg-green-500/15 border border-green-500/30 px-4 py-2 text-sm font-medium text-green-400">
-      🟢 Open to Internship
-    </span>
+          <h1 className="max-w-4xl bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text font-display text-5xl font-bold tracking-tight text-transparent sm:text-6xl lg:text-7xl">
+  Mohammad Kaif Ali
+</h1>
+        <div className="mt-5 flex items-center gap-2">
+  <span className="h-3 w-3 rounded-full bg-green-500 animate-pulse"></span>
 
-     <span className="rounded-full bg-cyan-500/15 border border-cyan-500/30 px-4 py-2 text-sm font-medium text-cyan-400">
-      📍 Dehradun, India
-   </span>
-    </div>
-          <p className="mt-4 max-w-2xl text-xl font-semibold text-cyan-400 sm:text-2xl">
-          Data Analyst • Python • SQL • Power BI
-          </p>
+  <span className="rounded-full border border-green-500/30 bg-green-500/15 px-4 py-2 text-sm font-medium text-green-400">
+    Open to Internship
+  </span>
+
+  <span className="rounded-full border border-cyan-500/30 bg-cyan-500/15 px-4 py-2 text-sm font-medium text-cyan-400">
+    📍 Dehradun, India
+  </span>
+</div>
+
+<p className="mt-4 max-w-2xl text-xl font-semibold text-cyan-400 sm:text-2xl">
+  Aspiring Data Analyst • Python • SQL • Power BI
+</p>
           <p className="mt-6 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
            Passionate about transforming raw data into meaningful insights through
            analytics, visualization, and problem-solving. I enjoy building dashboards,
@@ -52,18 +57,29 @@ export function HeroSection() {
             <span className="rounded-full border border-border/60 bg-card/70 px-3 py-2">{siteConfig.location}</span>
             <span className="rounded-full border border-border/60 bg-card/70 px-3 py-2">{siteConfig.email}</span>
           </div>
-
+<div className="mt-6 flex flex-wrap gap-3">
+  {["Python", "SQL", "Power BI", "Excel", "Pandas", "Git"].map((skill) => (
+    <span
+      key={skill}
+      className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-medium text-cyan-300 transition-all duration-300 hover:scale-105 hover:bg-cyan-500 hover:text-white"
+    >
+      {skill}
+    </span>
+  ))}
+</div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Button
-       asChild
-       size="lg"
-      className="bg-cyan-500 hover:bg-cyan-400 text-white shadow-lg hover:scale-105 transition-all duration-300"
->
-      <Link href={siteConfig.resumePath}>
-    <Download className="h-4 w-4" />
-       Resume
-       </Link>
-    </Button>
+         
+ <Button asChild size="lg">
+  <a
+    href={siteConfig.resumePath}
+    download
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Download className="mr-2 h-4 w-4" />
+    Download Resume
+  </a>
+</Button>
             <Button
   asChild
   size="lg"
@@ -122,29 +138,34 @@ export function HeroSection() {
     </div>
   </CardContent>
 </Card>
+<Card className="border-border/70 bg-card/70 shadow-soft backdrop-blur-xl">
+  <CardContent className="grid grid-cols-2 gap-4 p-6">
 
-          <Card className="border-border/70 bg-card/70 shadow-soft backdrop-blur-xl">
-            <CardContent className="grid gap-4 p-6 sm:grid-cols-2">
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">Core strengths</p>
-                <ul className="mt-3 space-y-2 text-sm text-foreground">
-                  <li>• Insight-led analysis</li>
-                  <li>• Clean dashboard storytelling</li>
-                  <li>• Data handling and presentation</li>
-                </ul>
-              </div>
-              <div>
-                <p className="text-sm font-medium text-muted-foreground">Focus areas</p>
-                <ul className="mt-3 space-y-2 text-sm text-foreground">
-                  <li>• Python, SQL, Excel</li>
-                  <li>• Power BI visual reporting</li>
-                  <li>• Reliable, polished delivery</li>
-                </ul>
-              </div>
-            </CardContent>
-          </Card>
+    <div className="rounded-xl border border-cyan-500/20 bg-cyan-500/10 p-4 text-center">
+      <h3 className="text-3xl font-bold text-cyan-400">10+</h3>
+      <p className="text-sm text-muted-foreground">Skills</p>
+    </div>
+
+    <div className="rounded-xl border border-green-500/20 bg-green-500/10 p-4 text-center">
+      <h3 className="text-3xl font-bold text-green-400">3+</h3>
+      <p className="text-sm text-muted-foreground">Projects</p>
+    </div>
+
+    <div className="rounded-xl border border-purple-500/20 bg-purple-500/10 p-4 text-center">
+      <h3 className="text-3xl font-bold text-purple-400">2026</h3>
+      <p className="text-sm text-muted-foreground">Graduate</p>
+    </div>
+
+    <div className="rounded-xl border border-orange-500/20 bg-orange-500/10 p-4 text-center">
+      <h3 className="text-3xl font-bold text-orange-400">100%</h3>
+      <p className="text-sm text-muted-foreground">Responsive</p>
+    </div>
+
+  </CardContent>
+</Card>
         </div>
       </div>
     </AnimatedSection>
+  
   );
 }

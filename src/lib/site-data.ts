@@ -20,7 +20,7 @@ export const siteConfig = {
   email: 'alikaif5605@gmail.com',
   linkedin: 'https://www.linkedin.com/in/mohammad-kaif-ali-387a14321',
   github: 'https://github.com/mohammadkaifali-sys',
-  resumePath:  '/Mohammad_Kaif_Ali_Resume_1.pdf',
+  resumePath:  "/resume.pdf",
   siteUrl: getSiteUrl()
 };
 
@@ -59,20 +59,21 @@ export const skills = [
 
 export const projects = [
   {
-    slug: 'ev-smartbuddy',
-    name: 'EV SmartBuddy',
-    description:
-      'A future-ready data experience concept that organizes electric vehicle insights, charging trends, and decision support into a streamlined dashboard-style product.',
-    features: [
-      'Interactive insight panels with trend summaries',
-      'Structured analysis cards for key KPIs',
-      'Responsive layout optimized for recruiters and stakeholders'
-    ],
-    stack: ['Python', 'SQL', 'Power BI', 'Data Storytelling'],
-    githubHref:  "https://github.com/mohammadkaifali-sys/EV-BUDDY"
-    liveHref: '/projects/ev-smartbuddy',
-    accent: 'from-cyan-500/20 via-sky-500/10 to-transparent'
-  },
+   
+  slug: 'ev-smartbuddy',
+  name: 'EV SmartBuddy',
+  description:
+    'A future-ready data experience concept that organizes electric vehicle insights, charging trends, and decision support into a streamlined dashboard-style product.',
+  features: [
+    'Interactive insight panels with trend summaries',
+    'Structured analysis cards for key KPIs',
+    'Responsive layout optimized for recruiters and stakeholders',
+  ],
+  stack: ['Python', 'SQL', 'Power BI', 'Data Storytelling'],
+ githubHref: 'https://github.com/mohammadkaifali-sys/EV-BUDDY',
+ liveHref: '/project/ev-smartbuddy',
+ accent: 'from-cyan-500/20 via-sky-500/10 to-transparent',
+},
   {
     slug: 'grocery-management-system',
     name: 'Grocery Management System',
@@ -86,7 +87,7 @@ export const projects = [
     stack: ['Excel', 'SQL', 'Python', 'Automation'],
     githubHref: '/projects/grocery-management-system#implementation',
     liveHref: '/projects/grocery-management-system',
-    accent: 'from-emerald-500/20 via-lime-500/10 to-transparent'
+    accent: 'from-emerald-500/20 via-lime-500/10 to-transparent',
   },
   {
     slug: 'data-analytics-dashboard',
@@ -101,7 +102,7 @@ export const projects = [
     stack: ['Power BI', 'Pandas', 'NumPy', 'Dashboard Design'],
     githubHref: '/projects/data-analytics-dashboard#implementation',
     liveHref: '/projects/data-analytics-dashboard',
-    accent: 'from-violet-500/20 via-fuchsia-500/10 to-transparent'
+    accent: 'from-violet-500/20 via-fuchsia-500/10 to-transparent',
   }
 ];
 
@@ -143,7 +144,7 @@ export const education = [
 export const resumeHighlights = [
   'Data-focused portfolio with business-friendly storytelling',
   'Hands-on experience in Python, SQL, Excel, and Power BI',
-  'Clean, responsive, recruiter-friendly presentation of work'
+  'Clean, responsive, recruiter-friendly presentation of work',
 ];
 
 export const contactChannels = [

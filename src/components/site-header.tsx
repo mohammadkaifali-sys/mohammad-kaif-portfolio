@@ -36,10 +36,10 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-cyan-500/10 bg-slate-950/70 backdrop-blur-2xl supports-[backdrop-filter]:bg-slate-950/50">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <Link className="flex items-center gap-3 font-semibold tracking-tight text-foreground transition hover:opacity-90" href="#home">
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-foreground text-background shadow-soft">
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/30 transition duration-300 hover:rotate-6 hover:scale-110">
             <Sparkles className="h-5 w-5" />
           </span>
           <span className="hidden sm:block">

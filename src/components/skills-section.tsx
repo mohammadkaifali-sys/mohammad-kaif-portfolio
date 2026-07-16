@@ -6,16 +6,37 @@ import { skills } from '@/lib/site-data';
 
 export function SkillsSection() {
   return (
-    <AnimatedSection className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20" id="skills" delay={0.1}>
+    <AnimatedSection
+      id="skills"
+      delay={0.1}
+      className="relative mx-auto max-w-7xl overflow-hidden px-4 py-24 sm:px-6 lg:px-8"
+    >
+      {/* Background Glow */}
+      <div className="absolute inset-0 -z-10 overflow-hidden">
+        <div className="absolute -left-24 top-10 h-80 w-80 rounded-full bg-cyan-500/10 blur-3xl" />
+        <div className="absolute -right-24 bottom-10 h-80 w-80 rounded-full bg-purple-500/10 blur-3xl" />
+      </div>
+
+      {/* Top Badge */}
+      <div className="mb-5 flex justify-center">
+        <span className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-4 py-2 text-sm font-semibold text-cyan-400">
+          💻 Tech Stack
+        </span>
+      </div>
+
       <SectionHeading
-        description="A practical toolkit covering the fundamentals recruiters expect from a data analyst portfolio."
         eyebrow="Skills"
-        title="Tools and capabilities"
+        title="Technical Skills"
+        description="Technologies and tools I use to build data-driven applications, analyze datasets, and create interactive dashboards."
       />
-      <Card className="mt-10">
-        <CardContent className="flex flex-wrap gap-3 p-6 sm:p-8">
+
+      <Card className="mt-12 border border-slate-700/50 bg-card/70 shadow-xl backdrop-blur-xl">
+        <CardContent className="flex flex-wrap justify-center gap-4 p-8">
           {skills.map((skill) => (
-            <Badge key={skill} className="px-4 py-2 text-sm" variant="subtle">
+            <Badge
+              key={skill}
+              className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-5 py-3 text-sm font-medium text-cyan-300 transition-all duration-300 hover:scale-105 hover:border-cyan-400 hover:bg-cyan-500 hover:text-white"
+            >
               {skill}
             </Badge>
           ))}

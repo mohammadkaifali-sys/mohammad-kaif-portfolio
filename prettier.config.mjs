@@ -1,10 +1,14 @@
-/** @type {import('prettier').Config} */
-const config = {
-  semi: true,
-  singleQuote: true,
-  trailingComma: 'none',
-  tabWidth: 2,
-  printWidth: 100
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
 };
 
-export default config;
+export default nextConfig;

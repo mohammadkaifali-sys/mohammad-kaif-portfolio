@@ -33,11 +33,18 @@ export function ResumeSection() {
               ))}
             </ul>
           </div>
-          <Button asChild size="lg">
-            <Link href={siteConfig.resumePath}>
-              <Download className="h-4 w-4" /> Download Resume
-            </Link>
-          </Button>
+          <Button
+  asChild size="lg">
+  <a
+    href={siteConfig.resumePath}
+    target="_blank"
+    rel="noopener noreferrer"
+    download
+  >
+    <Download className="mr-2 h-4 w-4" />
+    Download Resume
+  </a>
+</Button>
         </CardContent>
       </Card>
     </AnimatedSection>

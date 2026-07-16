@@ -1,14 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [],
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
   },
 };
-
-export default nextConfig;
